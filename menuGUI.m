@@ -147,6 +147,12 @@ if esLetra == 1
         set(handles.lambda, 'String', result(5));
         set(handles.AN, 'String', result(6));
         set(handles.delta, 'String', result(7));
+        
+        if result(1) <= 2.405
+            monomodoGUI
+        else
+            multimodoIGGUI
+        end
     end
 end
 

@@ -190,10 +190,7 @@ if esLetra == 1
             msgbox(result);
         end
     catch
-        set(handles.bl, 'String', result(1));
-        set(handles.B, 'String', result(2));
-        set(handles.L, 'String', result(3));
-    end
+    set(handles.bl, 'String', result); 
 end
 
 
