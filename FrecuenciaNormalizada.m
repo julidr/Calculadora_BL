@@ -43,7 +43,9 @@ function data = FrecuenciaNormalizada(n1, n2, r, lambda, AN, delta)
         end
         delta = (n1-n2)/n1;
      end
-     AN = n1*sqrt(2*delta);
-     V = ((2*pi*r)/lambda)*AN;
-     data = [V n1 n2 lambda AN delta];
+     if AN == 0
+        AN = n1*sqrt(2*delta);
+     end
+     V = ((2*pi*r)./lambda)*AN;
+     data = [V n1 n2 r lambda AN delta];
 end

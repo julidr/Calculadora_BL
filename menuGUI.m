@@ -102,33 +102,52 @@ if esLetra == 1
     %Revisa si hay alguno que tenga un String vacio y en dado caso le asigna el
     %valor 0
     if isempty(n1)
-        n1 = 0.0;
+        n1 = 0;
     else
         n1 = str2double(n1);
     end
     if isempty(n2)
-        n2 = 0.0;
+        n2 = 0;
     else
         n2 = str2double(n2);
     end
     if isempty(a)
-        a = 0.0;
+        a = 0;
     else
         a = str2double(a);
     end
     if isempty(lambda)
-        lambda = 0.0;
+        lambda = 0;
+    else
+        lambda = str2double(lambda);
     end
     if isempty(AN)
-        AN = 0.0;
+        AN = 0;
     else
         AN = str2double(AN);
     end
     if isempty(delta)
-        delta = 0.0;
+        delta = 0;
     else
         delta = str2double(delta);
-    end    
+    end
+    result = FrecuenciaNormalizada(n1,n2,a,lambda,AN,delta);
+    
+    disp('-------------------')
+    disp(result);
+    try
+        if isstring(result) == 0
+            msgbox(result);
+        end
+    catch
+        set(handles.V, 'String', result(1));
+        set(handles.n1, 'String', result(2));
+        set(handles.n2, 'String', result(3));
+        set(handles.a, 'String', result(4));
+        set(handles.lambda, 'String', result(5));
+        set(handles.AN, 'String', result(6));
+        set(handles.delta, 'String', result(7));
+    end
 end
 
 
