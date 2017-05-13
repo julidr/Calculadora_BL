@@ -30,9 +30,7 @@ function data = FrecuenciaNormalizada(n1, n2, r, lambda, AN, delta)
         if delta == 0
             n1 = sqrt((AN^2)+(n2^2));
         else
-            if AN==0
-                n1 = -n2/(delta-1);
-            end
+            n1 = -n2/(delta-1);
         end
     end
     if n2==0
@@ -43,9 +41,7 @@ function data = FrecuenciaNormalizada(n1, n2, r, lambda, AN, delta)
         if delta == 0
             n2 = sqrt((n1^2)-(AN^2));
         else
-            if AN==0
-                n2 = n1-(delta*n1);
-            end
+           n2 = n1-(delta*n1);
         end
      end
      if  delta==0
