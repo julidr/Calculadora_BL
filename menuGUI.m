@@ -155,7 +155,7 @@ if esLetra == 1
         else
             setappdata(0,'n1',n1);
             setappdata(0,'n2',n2);
-            multimodoIGGUI
+            menuMultimodo
         end
     end
 end
