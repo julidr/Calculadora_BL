@@ -1,4 +1,5 @@
 function varargout = menuGUI(varargin)
+format long;
 % MENUGUI MATLAB code for menuGUI.fig
 %      MENUGUI, by itself, creates a new MENUGUI or raises the existing
 %      singleton*.
