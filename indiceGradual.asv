@@ -1,6 +1,7 @@
 %%n1: Radio del nucleo mm - example n1 = 1.46;
 %%n2: Radio de la cubierta mm - example n2 = 1.45;
 function data = indiceGradual(n1, n2, B, L)
+try
     clc;
     if n2 >= n1
         data='No hay propagacion';
@@ -15,18 +16,12 @@ function data = indiceGradual(n1, n2, B, L)
             if B==0
                 B=BL/L;
                 data = [BL B L];
-            else 
-                if L==0
-                    L=BL/B;
-                    data = [BL B L];
-                else
-                    if abs(100-((BL*100)/(B*L))) <= 1
-                        data = [BL B L];
-                    else
-                        data = 'No se pudo Calcular el valor de B o de L';
-                    end
-                end
             end
+ 
         end
+        %%fprintf('BL <= %1.3f\n',BL)
     end
+catch
+    warning('Por favor solo ingresar valores numericos o valores de n1 y n2 aceptables')
+    data = 'null';
 end
