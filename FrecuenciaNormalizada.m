@@ -23,18 +23,30 @@ function data = FrecuenciaNormalizada(n1, n2, r, lambda, AN, delta)
     %----------------------------------------------------------------------    
 
     if n1==0
-        if delta==0 || n2==0
+        if (delta==0 && AN==0) || n2==0 
             data = 'No se puede calcular n1';
             return
         end
-        n1 = -n2/(delta-1);
+        if delta == 0
+            n1 = sqrt((AN^2)+(n2^2));
+        else
+            if AN==0
+                n1 = -n2/(delta-1);
+            end
+        end
     end
     if n2==0
-        if delta==0 || n1==0
+        if (delta==0 && AN==0) || n1==0
         	data = 'No se puede calcular n2';
         	return
         end
-        n2 = n1-(delta*n1);
+        if delta == 0
+            n2 = sqrt((n1^2)-(AN^2));
+        else
+            if AN==0
+                n2 = n1-(delta*n1);
+            end
+        end
      end
      if  delta==0
         if n1==0 || n2==0
