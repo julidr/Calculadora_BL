@@ -1,4 +1,4 @@
-function varargout = multimodoIGGUI(varargin)
+function varargout = multimodoIGGUI(n1,n2,varargin)
 % MULTIMODOIGGUI MATLAB code for multimodoIGGUI.fig
 %      MULTIMODOIGGUI, by itself, creates a new MULTIMODOIGGUI or raises the existing
 %      singleton*.
@@ -43,6 +43,8 @@ else
 end
 % End initialization code - DO NOT EDIT
 
+set(handles.n1, 'String', n1);
+set(handles.n2, 'String', n2);
 
 % --- Executes just before multimodoIGGUI is made visible.
 function multimodoIGGUI_OpeningFcn(hObject, eventdata, handles, varargin)
@@ -72,10 +74,7 @@ function varargout = multimodoIGGUI_OutputFcn(hObject, eventdata, handles)
 % Get default command line output from handles structure
 varargout{1} = handles.output;
 
-n1 = getappdata(0,'n1');
-n2 = getappdata(0,'n2');
-set(handles.n1, 'String', n1);
-set(handles.n2, 'String', n2);
+
 
 function B_Callback(hObject, eventdata, handles)
 % hObject    handle to B (see GCBO)
@@ -155,9 +154,7 @@ function calcular_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 B = get(handles.B, 'String');
 L = get(handles.L, 'String');
-n1 = getappdata(0,'n1');
-n2 = getappdata(0,'n2');
-arrayEntrada = [B, L];
+arrayEntrada = [dispersion, lambda, B, L];
 esLetra = 1; 
 
 for i=1:length(arrayEntrada)
@@ -167,29 +164,7 @@ for i=1:length(arrayEntrada)
        break;
     end
 end
-
-if esLetra == 1
-    if isempty(B)
-        B = 0;
-    else
-        B = str2double(B);
-    end
-    if isempty(L)
-        L = 0;
-    else
-        L = str2double(L);
-    end
-    result = indiceGradual(n1,n2,B,L);
-    try
-        if isstring(result) == 0
-            msgbox(result);
-        end
-    catch
-        set(handles.bl, 'String', result(1));
-        set(handles.B, 'String', result(2));
-        set(handles.L, 'String', result(3));
-    end 
-end
+set(handles.bl, 'String', result); 
 
 
 % --- Executes on button press in graficar.

@@ -140,6 +140,8 @@ if esLetra == 1
             msgbox(result);
         end
     catch
+        n1 = result(2);
+        n2 = result(3);
         set(handles.V, 'String', result(1));
         set(handles.n1, 'String', result(2));
         set(handles.n2, 'String', result(3));
@@ -151,6 +153,8 @@ if esLetra == 1
         if result(1) <= 2.405
             monomodoGUI
         else
+            setappdata(0,'n1',n1);
+            setappdata(0,'n2',n2);
             multimodoIGGUI
         end
     end
