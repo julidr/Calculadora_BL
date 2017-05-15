@@ -78,7 +78,7 @@ v = getappdata(0,'V');
 propagados = (v^2)/2;
 set(handles.n1, 'String', n1);
 set(handles.n2, 'String', n2);
-set(handles.propagados,'String',propagados);
+set(handles.propagados,'String',v)
 
 
 function B_Callback(hObject, eventdata, handles)

@@ -74,8 +74,12 @@ varargout{1} = handles.output;
 
 n1 = getappdata(0,'n1');
 n2 = getappdata(0,'n2');
+alpha = 2;
+v = getappdata(0,'V');
+propagados = (alpha/(alpha+2))*((v^2)/2);
 set(handles.n1, 'String', n1);
 set(handles.n2, 'String', n2);
+set(handles.propagados,'String',propagados);
 
 function B_Callback(hObject, eventdata, handles)
 % hObject    handle to B (see GCBO)

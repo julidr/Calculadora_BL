@@ -149,7 +149,7 @@ if esLetra == 1
         set(handles.lambda, 'String', result(5));
         set(handles.AN, 'String', result(6));
         set(handles.delta, 'String', result(7));
-        
+        setappdata(0,'V',result(1));
         if result(1) <= 2.405
             monomodoGUI
         else
