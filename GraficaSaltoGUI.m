@@ -72,6 +72,10 @@ function varargout = GraficaSaltoGUI_OutputFcn(hObject, eventdata, handles)
 % Get default command line output from handles structure
 varargout{1} = handles.output;
 
+n1 = getappdata(0,'n1');
+n2 = getappdata(0,'n2');
+set(handles.n1, 'String', n1);
+set(handles.n2, 'String', n2);
 
 
 function n1_Callback(hObject, eventdata, handles)
@@ -124,14 +128,39 @@ function graficar_Callback(hObject, eventdata, handles)
 % hObject    handle to graficar (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-    n1 = get(handles.n1, 'String');
-    n2 = get(handles.n2, 'String');
-    L = 1;
-    C = 3*10^8;   
-    C=C*1000;
-    AN = n1*sqrt(2*((n1-n2)/n1));
-    B = 2*((n2*C)/((AN^2)*L));
-    x = [0 1];
-    y = [0 B];
-    plot([x(1) y(1)],[x(2) y(2)],'r')
-end
+    clc;
+    
+        n1 = get(handles.n1, 'String');
+        n2 =get(handles.n2, 'String');
+        arrayEntrada = [n1, n2];
+        esLetra = 1;
+        %Revisa si algun String es una letra
+        for i=1:length(arrayEntrada)
+            if revisarSiEntradaEsLetra(arrayEntrada(i)) == 0
+               msgbox('Por favor solo ingresar valores numericos')
+               esLetra = 0;
+               break;
+            end
+        end
+        
+        if esLetra == 1
+           
+                n1 = str2double(n1);
+                n2 = str2double(n2);
+             if n1>n2
+                L = 1;
+                C = 3*10^8;   
+                AN = sqrt((n1^2)-(n2^2));
+                B = 2*((n2*C)/((AN.^2)*L));
+                x = [0 0];
+                y = [L B];
+                figure
+                plot([x(1) y(1)],[x(2) y(2)],'r');
+            else
+                msgbox('El valor de n1 debe ser mayor a n2 para halla propagacion')
+            end
+        end
+    
+    
+    
+
