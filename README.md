@@ -31,6 +31,6 @@ de los datos de entradas y desplegara otra ventana indicando si es una fibra mon
 ![Img Menu](/imgreadme/indicegradual3.PNG)
 
 ![Img Menu](/imgreadme/menuguimono.PNG)
-![Img Menu](/imgreadme/menuguimono1.PNG)
-![Img Menu](/imgreadme/menuguimono2.PNG)
-![Img Menu](/imgreadme/menuguimono3.PNG)
+![Img Menu](/imgreadme/monomodo1.PNG)
+![Img Menu](/imgreadme/monomodo2.PNG)
+![Img Menu](/imgreadme/monomodo3.PNG)
