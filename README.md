@@ -10,3 +10,7 @@ Simple calculadora de BL para diferentes tipos de fibra óptica.
 - [Steven Puerto](https://github.com/stevenn2012)
 - [Juliana Diaz](https://github.com/julidr)
 - [Mario Ortega](https://github.com/bellyoz)
+
+## Manual de Usuario ##
+
+![GitHub Logo](/imgreadme/menugui.png)
