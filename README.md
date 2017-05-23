@@ -17,3 +17,20 @@ la cual le mostrara una ventana como la siguiente figura.
 
 ![Img Menu](/imgreadme/menugui.PNG)
 
+Los espacios como ... se pueden dejar en cero y el software los calculara automaticamente
+cuando el boton de calcular sea presionado. Como resultado le mostrara la frecuencia normalizada
+de los datos de entradas y desplegara otra ventana indicando si es una fibra monomodo o multimodo.
+
+![Img Menu](/imgreadme/saltodeindice.PNG)
+![Img Menu](/imgreadme/saltodeindice2.PNG)
+![Img Menu](/imgreadme/saltodeindice3.PNG)
+![Img Menu](/imgreadme/saltodeindice4.PNG)
+![Img Menu](/imgreadme/indicegradual.PNG)
+![Img Menu](/imgreadme/indicegradual1.PNG)
+![Img Menu](/imgreadme/indicegradual2.PNG)
+![Img Menu](/imgreadme/indicegradual3.PNG)
+
+![Img Menu](/imgreadme/menuguimono.PNG)
+![Img Menu](/imgreadme/menuguimono1.PNG)
+![Img Menu](/imgreadme/menuguimono2.PNG)
+![Img Menu](/imgreadme/menuguimono3.PNG)
