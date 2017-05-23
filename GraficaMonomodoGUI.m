@@ -22,7 +22,7 @@ function varargout = GraficaMonomodoGUI(varargin)
 
 % Edit the above text to modify the response to help GraficaMonomodoGUI
 
-% Last Modified by GUIDE v2.5 18-May-2017 18:38:38
+% Last Modified by GUIDE v2.5 23-May-2017 14:12:59
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -72,27 +72,58 @@ function varargout = GraficaMonomodoGUI_OutputFcn(hObject, eventdata, handles)
 % Get default command line output from handles structure
 varargout{1} = handles.output;
 
+d = getappdata(0,'d');
+lam = getappdata(0,'am');
+set(handles.d, 'String', d);
+set(handles.lam, 'String', lam);
+% --- Executes on button press in grafica.
+function grafica_Callback(hObject, eventdata, handles)
+% hObject    handle to grafica (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+  clc;
+    
+        d = get(handles.d, 'String');
+        lam =get(handles.lam, 'String');
+        arrayEntrada = [d, lam];
+        esLetra = 1;
+        %Revisa si algun String es una letra
+        for i=1:length(arrayEntrada)
+            if revisarSiEntradaEsLetra(arrayEntrada(i)) == 0
+               msgbox('Por favor solo ingresar valores numericos')
+               esLetra = 0;
+               break;
+            end
+        end
+        
+        if esLetra == 1
+                d = str2double(d);
+                lam = str2double(lam);
+                L = 1;
+                B = 1/(d*lam*L);
+                x = [0 0];
+                y = [L B];
+                figure
+                plot([x(1) y(1)],[x(2) y(2)],'r');
+                ylabel('Ancho de Banda (GHZ)'); 
+                xlabel('Longitud (KM)');
+                title('Grafica Monomodo');
+        end
 
-% --- Executes on button press in pushbutton1.
-function pushbutton1_Callback(hObject, eventdata, handles)
-% hObject    handle to pushbutton1 (see GCBO)
+
+
+function lam_Callback(hObject, eventdata, handles)
+% hObject    handle to lam (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
-
-
-function edit1_Callback(hObject, eventdata, handles)
-% hObject    handle to edit1 (see GCBO)
-% eventdata  reserved - to be defined in a future version of MATLAB
-% handles    structure with handles and user data (see GUIDATA)
-
-% Hints: get(hObject,'String') returns contents of edit1 as text
-%        str2double(get(hObject,'String')) returns contents of edit1 as a double
+% Hints: get(hObject,'String') returns contents of lam as text
+%        str2double(get(hObject,'String')) returns contents of lam as a double
 
 
 % --- Executes during object creation, after setting all properties.
-function edit1_CreateFcn(hObject, eventdata, handles)
-% hObject    handle to edit1 (see GCBO)
+function lam_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to lam (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
 
@@ -104,18 +135,18 @@ end
 
 
 
-function edit2_Callback(hObject, eventdata, handles)
-% hObject    handle to edit2 (see GCBO)
+function d_Callback(hObject, eventdata, handles)
+% hObject    handle to d (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
-% Hints: get(hObject,'String') returns contents of edit2 as text
-%        str2double(get(hObject,'String')) returns contents of edit2 as a double
+% Hints: get(hObject,'String') returns contents of d as text
+%        str2double(get(hObject,'String')) returns contents of d as a double
 
 
 % --- Executes during object creation, after setting all properties.
-function edit2_CreateFcn(hObject, eventdata, handles)
-% hObject    handle to edit2 (see GCBO)
+function d_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to d (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
 

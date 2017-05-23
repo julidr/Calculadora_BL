@@ -156,6 +156,9 @@ function graficar_Callback(hObject, eventdata, handles)
                 y = [L B];
                 figure
                 plot([x(1) y(1)],[x(2) y(2)],'r');
+                ylabel('Ancho de Banda (GHZ)'); 
+                xlabel('Longitud (KM)');
+                title('Grafica Salto de Indice');
             else
                 msgbox('El valor de n1 debe ser mayor a n2 para halla propagacion')
             end
