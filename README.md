@@ -1,6 +1,9 @@
 # CRO #
 Simple calculadora de BL para diferentes tipos de fibra óptica.
 
+## Tabla de Contenidos ##
+- [Tipos de Fibra](#Tipos-de-Fibra)
+
 ## Tipos de Fibra ##
 - Monomodo
 - Multimodo de Salto de Indice
@@ -20,7 +23,7 @@ la cual le mostrara una ventana como la siguiente figura.
 
 ![Img Menu](/imgreadme/menugui.PNG)
 
-Los espacios como n2 se pueden dejar en cero y el software los calculara automaticamente
+Los espacios como n2 se pueden dejar en cero (o vacios) y el software los calculara automaticamente
 cuando el boton de calcular sea presionado. Como resultado le mostrara la frecuencia normalizada
 de los datos de entradas y desplegara otra ventana indicando si es una fibra monomodo o multimodo.
 
