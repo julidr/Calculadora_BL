@@ -37,6 +37,10 @@ de los datos de entrada y desplegara otra ventana indicando si es una fibra mono
   |:-------|
   | En caso de que se llegue a ingresar un valor no numerico, el programa le avisara al usuario para que ingrese solamente valores numericos. |
 
+  | Consideraciones valores de n1 y n2 |
+  |:-------|
+  | Teniendo en cuenta que para que exista propagación n1 > n2, en caso de que esto no se llegue a cumplir, el programa le avisara al usuario para que ingrese un valor de n1 y n2 acertado. |
+
 ### Menu Fibra Multimodo ###
 
 ![Img Menu](/imgreadme/menuMultimodo.PNG)
@@ -56,6 +60,14 @@ En la grafica anterior si se le da un valor ya sea al ancho de banda (B) o la lo
 calculara el espacio que falta. Como fue en este caso que el ancho de banda era 5 y la longitud igual a 0, cuando se le da a calcular la longitud
 automaticamente se adapta a la mejor para este ancho de banda. Igualmente funciona de manera viceversa, es decir con un ancho de banda en cero y con valor de longitud ingresado por el usuario,
 tambien mostrara el BL correspondiente a estos datos ingresados.
+
+  | Consideraciones de Letras o Valores no Numericos |
+  |:-------|
+  | En caso de que se llegue a ingresar un valor no numerico, el programa le avisara al usuario para que ingrese solamente valores numericos. |
+
+  | Consideraciones valores de n1 y n2 |
+  |:-------|
+  | Teniendo en cuenta que para que exista propagación n1 > n2, en caso de que esto no se llegue a cumplir, el programa le avisara al usuario para que ingrese un valor de n1 y n2 acertado. |
 
 ![Img Menu](/imgreadme/saltodeindice3.PNG)
 
