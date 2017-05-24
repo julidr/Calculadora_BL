@@ -12,6 +12,9 @@ Simple calculadora de BL para diferentes tipos de fibra óptica.
 - [Mario Ortega](https://github.com/bellyoz)
 
 ## Manual de Usuario ##
+
+### Iniciar el Programa ###
+
 Para Iniciar el software debe abrirlo en matlap y luego ejecutar el archivo menuGUI.m
 la cual le mostrara una ventana como la siguiente figura.
 
