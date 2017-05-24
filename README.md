@@ -2,17 +2,14 @@
 Simple calculadora de BL para diferentes tipos de fibra óptica.
 
 ## Tabla de Contenidos ##
-- [Tipos de Fibra](#Tipos-de-Fibra)
+- [Tipos de Fibra](#tipos-de-fibra)
+- [Manual de Usuario](#manual-de-usuario)
+    * [Iniciar el Programa](#iniciar-el-programa)
 
 ## Tipos de Fibra ##
 - Monomodo
 - Multimodo de Salto de Indice
 - Multimodo de Indice Gradual
-
-## Colaboradores ##
-- [Steven Puerto](https://github.com/stevenn2012)
-- [Juliana Diaz](https://github.com/julidr)
-- [Mario Ortega](https://github.com/bellyoz)
 
 ## Manual de Usuario ##
 
@@ -85,3 +82,9 @@ Si se acciona el boton grafica demo de despliega una ventana como la anterio, co
 ![Img Menu](/imgreadme/monomodo3.PNG)
 
 Al presionar graficar de abrira una ventana en la cual se mostrara los resultados de como se comporta la fibra en cuanto el Ancho de banda y su longitud que es 1 km.
+
+## Colaboradores ##
+- [Steven Puerto](https://github.com/stevenn2012)
+- [Juliana Diaz](https://github.com/julidr)
+- [Mario Ortega](https://github.com/bellyoz)
+
