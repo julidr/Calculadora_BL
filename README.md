@@ -5,6 +5,8 @@ Simple calculadora de BL para diferentes tipos de fibra óptica.
 - [Tipos de Fibra](#tipos-de-fibra)
 - [Manual de Usuario](#manual-de-usuario)
     * [Iniciar el Programa](#iniciar-el-programa)
+    * [Menu Fibra Multimodo](#menu-fibra-multimodo)
+        * [Fibra Salto de Indice](#fibra-salto-de-indice)
 
 ## Tipos de Fibra ##
 - Monomodo
@@ -15,23 +17,26 @@ Simple calculadora de BL para diferentes tipos de fibra óptica.
 
 ### Iniciar el Programa ###
 
-Para Iniciar el software debe abrirlo en matlap y luego ejecutar el archivo menuGUI.m
+Para Iniciar el software debe abrirlo en matlap y luego ejecutar el archivo ```menuGUI.m```
 la cual le mostrara una ventana como la siguiente figura.
 
 ![Img Menu](/imgreadme/menugui.PNG)
 
 Los espacios como n2 se pueden dejar en cero (o vacios) y el software los calculara automaticamente
 cuando el boton de calcular sea presionado. Como resultado le mostrara la frecuencia normalizada
-de los datos de entradas y desplegara otra ventana indicando si es una fibra monomodo o multimodo.
+de los datos de entrada y desplegara otra ventana indicando si es una fibra monomodo o multimodo.
 
   | Consideraciones |
   |:-------|
   | Existen algunos campos como a y λ que son obligatorios para realizar los calculos, de igual forma considere que si quedan demasiados campos vacios tampoco se podra calcular la frecuencia Normalizada. |
 
+### Menu Fibra Multimodo ###
+
 ![Img Menu](/imgreadme/menuMultimodo.PNG)
 
-En caso de ser multimodo se desplegara el menu de la grafica anterior, con el fin en que se pueda seleccionar entre los multimodos
-indice gradual o Salto de indice. En caso de seleccionar Salto de indice se desplegara un menu como los muestra la siguiente grafica.
+En caso de ser multimodo se desplegara el menu de la grafica anterior, con el fin en que se pueda seleccionar entre los tipos de fibra multimodo los cuales serian indice gradual o Salto de indice. En caso de seleccionar Salto de indice se desplegara un menu como los muestra la siguiente grafica.
+
+#### Fibra Salto de Indice ####
 
 ![Img Menu](/imgreadme/saltodeindice.PNG)
 
