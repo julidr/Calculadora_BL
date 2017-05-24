@@ -21,6 +21,8 @@ Los espacios como n2 se pueden dejar en cero y el software los calculara automat
 cuando el boton de calcular sea presionado. Como resultado le mostrara la frecuencia normalizada
 de los datos de entradas y desplegara otra ventana indicando si es una fibra monomodo o multimodo.
 
+ | Existen algunos campos como a y λ que son obligatorios para realizar los calculos, de igual forma considere que si quedan demasiados campos vacios tampoco se podra calcular la frecuencia Normalizada.|
+
 ![Img Menu](/imgreadme/menuMultimodo.PNG)
 
 En caso de ser multimodo se desplegara el menu de la grafica anterior, con el fin en que se pueda seleccionar entre los multimodos
