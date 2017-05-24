@@ -2,7 +2,7 @@
 Simple calculadora de BL para diferentes tipos de fibra óptica.
 
 ## Tabla de Contenidos ##
-- [Tipos de Fibra](#Tipos-de-Fibra)
+- [Tipos de Fibra]("#Tipos de Fibra")
 
 ## Tipos de Fibra ##
 - Monomodo
