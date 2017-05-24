@@ -65,13 +65,13 @@ tambien mostrara el BL correspondiente a estos datos ingresados.
   |:-------|
   | En caso de que se llegue a ingresar un valor no numerico, el programa le avisara al usuario para que ingrese solamente valores numericos. |
 
-  | Consideraciones valores de n1 y n2 |
-  |:-------|
-  | Teniendo en cuenta que para que exista propagación n1 > n2, en caso de que esto no se llegue a cumplir, el programa le avisara al usuario para que ingrese un valor de n1 y n2 acertado. |
-
 ![Img Menu](/imgreadme/saltodeindice3.PNG)
 
 Si accionan el boton de graficar Demo se desplegara la ventana anterior, la cual tendra los valor anteriores de n1 y n2 con la posibilidad de cambiarlos.
+
+  | Consideraciones valores de n1 y n2 |
+  |:-------|
+  | Teniendo en cuenta que para que exista propagación n1 > n2, en caso de que esto no se llegue a cumplir, el programa le avisara al usuario para que ingrese un valor de n1 y n2 acertado. |
 
 ![Img Menu](/imgreadme/saltodeindice4.PNG)
 
@@ -84,9 +84,17 @@ Al presionar el boton graficar, se abre otra ventana donde muestra el comportami
 En caso de accionar el boton de indice gradual se desplegrara una ventana similar al de Salto de indice con la posibilidad de cambiar el ancho de banda y su longitud para asi calcular su respectivo BL.
 Esta fibra tambien tiene la capacidad de calcular el ancho de banda segun dea su longitud y viceversa.
 
+  | Consideraciones de Letras o Valores no Numericos |
+  |:-------|
+  | En caso de que se llegue a ingresar un valor no numerico, el programa le avisara al usuario para que ingrese solamente valores numericos. |
+
 ![Img Menu](/imgreadme/indicegradual2.PNG)
 
 Si se le acciona el boton de graficar, igualmente como funciona con el salto de indice desplegara una ventana en la cual se podra asignar valores de n1 y n2 para poderlos graficar.
+
+  | Consideraciones valores de n1 y n2 |
+  |:-------|
+  | Teniendo en cuenta que para que exista propagación n1 > n2, en caso de que esto no se llegue a cumplir, el programa le avisara al usuario para que ingrese un valor de n1 y n2 acertado. |
 
 ![Img Menu](/imgreadme/indicegradual3.PNG)
 
