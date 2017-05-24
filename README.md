@@ -7,6 +7,8 @@ Simple calculadora de BL para diferentes tipos de fibra óptica.
     * [Iniciar el Programa](#iniciar-el-programa)
     * [Menu Fibra Multimodo](#menu-fibra-multimodo)
         * [Fibra Salto de Indice](#fibra-salto-de-indice)
+        * [Fibra Indice Gradual](#fibra-indice-gradual)
+    * [Menu Fibra Monomodo](#menu-fibra-monomodo)
 
 ## Tipos de Fibra ##
 - Monomodo
@@ -58,6 +60,8 @@ Si accionan el boton de graficar Demo se desplegara la ventana anterior, la cual
 
 Al presionar el boton graficar, se abre otra ventana donde muestra el comportamiento en base al ancho de banda y la longitud la cual siempre es de 1km segun n1 y n2 ingresado anteriormente.
 
+#### Fibra Indice Gradual ####
+
 ![Img Menu](/imgreadme/indicegradual1.PNG)
 
 En caso de accionar el boton de indice gradual se desplegrara una ventana similar al de Salto de indice con la posibilidad de cambiar el ancho de banda y su longitud para asi calcular su respectivo BL.
@@ -70,6 +74,8 @@ Si se le acciona el boton de graficar, igualmente como funciona con el salto de 
 ![Img Menu](/imgreadme/indicegradual3.PNG)
 
 Al presiona el boton de graficar, nuevamente de despliega otra ventana con el comportamiento del ancho de banda y su longitud la cual es 1 kilometro.
+
+### Menu Fibra Monomodo ###
 
 ![Img Menu](/imgreadme/menuguimono.PNG)
 
