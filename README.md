@@ -111,6 +111,10 @@ En caso de ingresar valores en el menu principal, con los cuales su resultado se
 La figura anterior muestra los parametros que se deben ingresar para calcular el BL de una fibra monomodo. En este caso el parametro de dispersion y el delta de lambda son obligatorios para realizar este calculo.
 y los datos de ancho de banda como la longitud se comportan igual a las anteriores fibras, es decir que con un dato que se le ingrese a alguno de estos campos, el otro se autocompleta. Como en el ejemplo anterior se le dio un valor de 2km a la longitud y el ancho de banda  se ajusto a 0.05 Gb. 
 
+  | Consideraciones de Campos Vacios |
+  |:-------|
+  | Existen algunos campos como D y Δλ que son obligatorios para realizar los calculos de BL. |
+
 ![Img Menu](/imgreadme/monomodo2.PNG)
 
 Si se acciona el boton grafica demo de despliega una ventana como la anterio, con el fin de ingresar los valores de Dispersion y de delta de lambda para poder realizar la grafica.
