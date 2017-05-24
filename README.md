@@ -9,6 +9,7 @@ Simple calculadora de BL para diferentes tipos de fibra óptica.
         * [Fibra Salto de Indice](#fibra-salto-de-indice)
         * [Fibra Indice Gradual](#fibra-indice-gradual)
     * [Menu Fibra Monomodo](#menu-fibra-monomodo)
+- [Colaboradores](#colaboradores)
 
 ## Tipos de Fibra ##
 - Monomodo
@@ -28,9 +29,13 @@ Los espacios como n2 se pueden dejar en cero (o vacios) y el software los calcul
 cuando el boton de calcular sea presionado. Como resultado le mostrara la frecuencia normalizada
 de los datos de entrada y desplegara otra ventana indicando si es una fibra monomodo o multimodo.
 
-  | Consideraciones |
+  | Consideraciones de Campos Vacios |
   |:-------|
   | Existen algunos campos como a y λ que son obligatorios para realizar los calculos, de igual forma considere que si quedan demasiados campos vacios tampoco se podra calcular la frecuencia Normalizada. |
+
+  | Consideraciones de Letras o Valores no Numericos |
+  |:-------|
+  | En caso de que se llegue a ingresar un valor no numerico, el programa le avisara al usuario para que ingrese solamente valores numericos. |
 
 ### Menu Fibra Multimodo ###
 
